@@ -16,5 +16,15 @@ namespace TemperatureConversion
         {
             InitializeComponent();
         }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            //pass input as parameter to Temperature 
+            Temperature temp = new Temperature(textBox1.Text, rdCelsius.Checked);
+
+            //result
+            lblResult.Text = temp.getConvTemp();
+            textBox1.Text = "";
+        }
     }
 }
