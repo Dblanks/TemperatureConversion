@@ -24,7 +24,7 @@ namespace TemperatureConversion
 
             //result
             lblResult.Text = temp.getConvTemp();
-            textBox1.Text = "";
+            textBox1.Text = ""; //clear text box
         }
     }
 }
